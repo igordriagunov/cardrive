@@ -5,6 +5,7 @@
 
 .container {
   /* display: flex; */
+  /* border: 3px dotted green; */
   height: auto;
   max-width: 1140px;
   width: 96%;
@@ -16,18 +17,14 @@
 
 }
 
-/* button {
-  height: 50px;
-  width: 200px;
-  border-radius: 7px;
-  background-color: rgb(90, 207, 90);
-  color: #ffffff
-} */
 
 li {
   padding: 7px;
 }
 
+button {
+  margin-left: 45px;
+}
 
 
 .info {
@@ -62,14 +59,13 @@ li {
 .header-text {
   display: flex;
   justify-content: center;
-  word-break: break-all;
   margin-top: 1px;
   padding-top: 30px;
+  padding-left: 20px;
+
   font-style: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 
-
-  /* padding-bottom: 50px; */
 }
 
 .advantages {
@@ -99,9 +95,9 @@ li {
 .contacts {
   display: flex;
   /* border: 1px solid black; */
-  margin-top: 25px;
+  margin-top: 5px;
   justify-content: center;
-  width: 99%;
+  /* width: 99%; */
   /* align-items: center; */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 
@@ -148,10 +144,10 @@ li {
 
 .form-input {
   display: flex;
-  height: 500px;
+  height: 450px;
   /* border: 3px solid red; */
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
   margin-top: 45px;
   justify-content: flex-start;
 
@@ -165,11 +161,15 @@ li {
 
 }
 
-button {
-  margin-left: 45px;
+.foo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  padding-top: 15px;
+  background-color: rgb(255, 255, 255);
+
 }
-
-
 
 
 /* --------- Media ----------- */
@@ -196,9 +196,9 @@ button {
   }
 
   .contacts {
-    width: 45%;
-    display: flex;
-    justify-content: center;
+    /* width: 45%; */
+    /* display: flex; */
+    justify-content: flex-start;
   }
 }
 
@@ -207,10 +207,6 @@ button {
  ##Screen = 1281px to 1500px 
 */
 @media (min-width: 1351px) and (max-width: 1450px) {
-  /* .header {
-    background-color: orange;
-  } */
-
   .info {
     background-image: url("../img/slide2b.jpg");
     background-position: center;
@@ -228,9 +224,9 @@ button {
   }
 
   .contacts {
-    width: 33%;
-    display: flex;
-    justify-content: center;
+    /* width: 33%;
+    display: flex; */
+    justify-content: flex-start;
   }
 }
 
@@ -239,10 +235,6 @@ button {
  ##Screen = B/w 1025px to 1280px
 */
 @media (min-width: 1025px) and (max-width: 1350px) {
-  /* .header {
-    background-color: red;
-  } */
-
   .info {
     background-image: url("../img/slide2b.jpg");
   }
@@ -257,47 +249,19 @@ button {
   }
 
   .contacts {
-    width: 30%;
-    display: flex;
-    justify-content: center;
+    /* width: 30%;
+    display: flex; */
+    justify-content: flex-start;
+
   }
 }
 
-/* 
- ##Device = Tablets, iPads (portrait)
- ##Screen = B/w 768px to 1024px
-*/
-/* @media (min-width: 951px) and (max-width: 1024px) {
-  .header {
-    background-color: red;
-  }
-
-  .info {
-    background-image: url("../img/slide2b.jpg");
-  }
-
-
-} */
-
-/* 
- ##Device = Tablets, iPads (Landscape)
- ##Screen = B/w 768px to 1024px
-*/
-/* @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .header {
-    background-color: blue;
-  }
-} */
 
 /* 
  ##Device = Low Resolution Tablets, Mobiles (Landscape)
  ##Screen = B/w 481px to 767px
 */
 @media (min-width: 915px) and (max-width: 1024px) {
-  /* .header {
-    background-color: green;
-  } */
-
   .info {
     background-image: url("../img/slide2b.jpg");
   }
@@ -312,9 +276,16 @@ button {
   }
 
   .contacts {
-    width: 30%;
-    display: flex;
-    justify-content: center;
+    /* width: 30%; */
+    /* display: flex; */
+    justify-content: flex-start;
+  }
+
+  .form-input {
+    /* display: flex; */
+    /* margin-top: 105px; */
+    justify-content: flex-start;
+    /* margin-left: 50px; */
   }
 }
 
@@ -322,24 +293,72 @@ button {
  ##Device = Most of the Smartphones Mobiles (Portrait)
  ##Screen = B/w 320px to 479px
 */
-@media (min-width: 491px) and (max-width: 914px) {
+@media (min-width: 441px) and (max-width: 914px) {
   .form-input {
-    margin-top: 105px;
+    display: flex;
     justify-content: center;
+    margin-top: 105px;
+    margin-left: 90px;
+    padding-left: 50px;
   }
+
   .contacts {
     justify-content: center;
   }
 
-  /*
+}
+
+/*
  ##Device = Most of the Smartphones Mobiles (Portrait)
  ##Screen = B/w 320px to 479px
 */
-  @media (min-width: 120px) and (max-width: 490px) {
-
-
-    .info {
-      background-image: none;
-      background-color: rgb(196, 196, 196);
-    }
+/* @media (min-width: 441px) and (max-width: 490) {
+  .info {
+    background-image: url("../img/road_bgc_blur_2.jpg");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: repeat;
   }
+
+  .contacts {
+    display: flex;
+  }
+
+  .form-input {
+    margin-top: 105px;
+    margin-left: 90px;
+    justify-content: center;
+    display: flex;
+  }
+} */
+
+
+
+
+@media (min-width: 1px) and (max-width: 440px) {
+  .header-text {
+    word-break: normal;
+  }
+
+  .info {
+    background-image: linear-gradient(30deg, rgb(130, 248, 209), rgb(250, 142, 109));
+  }
+
+  .contacts {
+    display: flex;
+  }
+
+  .form {
+    background-image: linear-gradient(45deg, rgb(184, 114, 224), rgb(115, 194, 174));
+
+  }
+
+  .form-input {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    margin-top: 105px;
+    margin-left: 35px;
+  }
+}
